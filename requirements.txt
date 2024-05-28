@@ -1,0 +1,7 @@
+mmengine==0.10.3
+numpy==1.26.4
+opencv-python==4.9.0.80
+pillow==10.2.0
+tensorboard==2.16.2
+torch==2.2.0
+torchvision==0.17.0
