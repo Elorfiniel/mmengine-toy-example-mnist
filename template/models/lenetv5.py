@@ -18,7 +18,8 @@ class LeNetv5(BaseModel):
 
   This implementation targets MNIST dataset published by LeCun:
 
-    http://yann.lecun.com/exdb/mnist/'''
+    http://yann.lecun.com/exdb/mnist/
+  '''
 
   def __init__(self, in_channels=1, n_classes=10):
     super(LeNetv5, self).__init__()
@@ -30,7 +31,7 @@ class LeNetv5(BaseModel):
       nn.ReLU(),
       nn.MaxPool2d(kernel_size=2, stride=2, padding=0),
       nn.Flatten(),
-      nn.Linear(16*5*5, 120),
+      nn.Linear(16 * 5 * 5, 120),
       nn.ReLU(),
       nn.Linear(120, 64),
       nn.ReLU(),
