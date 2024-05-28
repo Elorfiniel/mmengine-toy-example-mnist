@@ -13,8 +13,8 @@ class Accuracy(BaseMetric):
   def process(self, data_batch, data_samples):
     preds, labels = data_samples
     self.results.append(dict(
-       n_total=len(labels),
-       n_correct=(preds == labels).sum().cpu(),
+      n_total=len(labels),
+      n_correct=(preds == labels).sum().cpu(),
     ))
 
   def compute_metrics(self, results):
