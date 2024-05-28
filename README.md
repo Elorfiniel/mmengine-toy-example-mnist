@@ -52,3 +52,7 @@ For more information on how to invoke these scripts, please refer to [mmengine d
 # run example training script for classifier on the mnist dataset
 python tools/train.py --work-dir runs configs/lenetv5/lenetv5-60k_mnist-28x28.py
 ```
+
+## Reference
+
+For detailed guides on how you can customize the project to your own needs (custom datasets, runtime hooks, new metrics, etc), have a look at the documentation in [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) and [mmdetection](https://github.com/open-mmlab/mmdetection). The `user_guides` and `advanced_guides` sections under the `doc` folder are valuable resource you need.
