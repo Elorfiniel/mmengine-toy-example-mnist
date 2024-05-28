@@ -70,9 +70,6 @@ def main_procedure():
 
   cfg.resume = cmdargs.resume
 
-  print_log('build runner using the following config.', logger='current', level=logging.INFO)
-  print_log(pp.pformat(cfg.to_dict()), logger='current', level=logging.INFO)
-
   if 'runner_type' not in cfg:
     runner = Runner.from_cfg(cfg)
   else:
