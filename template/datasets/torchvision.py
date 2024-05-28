@@ -23,4 +23,4 @@ def build_torchvision_mnist(transform=None, **kwargs):
 @DATASETS.register_module(name='FashionMNIST', force=False)
 def build_torchvision_fashion_mnist(transform=None, **kwargs):
   transform = compose_multiple_transform(transform)
-  return tv.datasets.FashionMNIST(**kwargs, transform)
+  return tv.datasets.FashionMNIST(**kwargs, transform=transform)
