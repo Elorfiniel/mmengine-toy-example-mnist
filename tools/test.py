@@ -71,8 +71,8 @@ def main_procedure():
   else:
     runner = RUNNERS.build(cfg)
 
-  if cmdargs.dump is not None:
-    dump_file = dump_file_from_cmdarg(cmdargs.dump)
+  if cmdargs.dump_pkl is not None:
+    dump_file = dump_file_from_cmdarg(cmdargs.dump_pkl)
     runner.test_evaluator.metrics.append(DumpResults(dump_file))
 
   runner.test()
