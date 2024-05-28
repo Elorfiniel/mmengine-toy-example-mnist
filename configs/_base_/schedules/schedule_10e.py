@@ -28,3 +28,15 @@ default_hooks = dict(
   param_scheduler=dict(type='ParamSchedulerHook'),
   checkpoint=dict(type='CheckpointHook', interval=1, by_epoch=True, max_keep_ckpts=4),
 )
+
+custom_hooks = [
+  dict(
+    type='CheckpointHook',
+    interval=1,
+    by_epoch=True,
+    # metric name specified in `compute_metrics`
+    save_best='accuracy',
+    rule='greater',
+    save_begin=2,
+  ),
+]
