@@ -50,5 +50,5 @@ For more information on how to invoke these scripts, please refer to [mmengine d
 
 ```shell
 # run example training script for classifier on the mnist dataset
-python tools/train.py --work-dir cache configs/lenetv5/lenetv5-60k_mnist-28x28.py
+python tools/train.py --work-dir runs configs/lenetv5/lenetv5-60k_mnist-28x28.py
 ```
