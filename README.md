@@ -50,7 +50,20 @@ For more information on how to invoke these scripts, please refer to [mmengine d
 
 ```shell
 # run example training script for classifier on the mnist dataset
-python tools/train.py --work-dir runs configs/lenetv5/lenetv5-60k_mnist-28x28.py
+python tools/train.py --work-dir runs/mnist configs/lenetv5/lenetv5-mnist-10e-28x28.py
+
+# run example training script for classifier on the fashion mnist dataset
+python tools/train.py --work-dir runs/mnist configs/lenetv5/lenetv5-fashion_mnist-10e-28x28.py
+```
+
+## Try with Trained Models
+
+```shell
+# run test using trained parameters on mnist dataset
+python tools/test.py --work-dir eval/mnist configs/lenetv5/lenetv5-mnist-10e-28x28.py checkpoints/lenetv5-mnist-best-acc.pth
+
+# run test using trained parameters on fashion dataset
+python tools/test.py --work-dir eval/mnist configs/lenetv5/lenetv5-fashion_mnist-10e-28x28.py checkpoints/lenetv5-fashion_mnist-best-acc.pth
 ```
 
 ## Reference
