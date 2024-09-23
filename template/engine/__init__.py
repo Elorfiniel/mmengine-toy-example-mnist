@@ -1,5 +1,5 @@
 from .hooks import CustomHook
-from .optim_wrapper import CustomOptimWrapper
+from .optim_wrappers import CustomOptimWrapper
 from .optimizers import CustomOptimizer
 from .schedulers import CustomLRScheduler, CustomMomentumScheduler
 
