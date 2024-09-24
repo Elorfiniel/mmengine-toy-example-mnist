@@ -2,6 +2,7 @@
 __pycache__
 
 # ignore dataset folder, working directory and eval results
-data
-runs
-eval
+data/*
+!data/.gitkeep
+runs/*
+!runs/.gitkeep
